@@ -1,543 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- ===== PRIMARY SEO META TAGS ===== -->
-  <title>Amazon.com/mytv – Enter Your Amazon MyTV Code | Activate Amazon Prime Video</title>
-  <meta name="description" content="Go to amazon.com/mytv to enter your 6-digit activation code and link your TV, Fire Stick, Roku, or Smart TV to Amazon Prime Video instantly." />
-  <meta name="keywords" content="amazon.com/mytv, amazon mytv, amazon mytv code, amazon prime video activate, mytv amazon code, amazon.com/mytv enter code" />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href=" />
-
-  <!-- ===== OPEN GRAPH (Social Sharing) ===== -->
-  <meta property="og:title" content="Amazon.com/mytv – Enter Your Amazon MyTV Activation Code" />
-  <meta property="og:description" content="Learn how to activate Amazon Prime Video on your Smart TV, Roku, or Fire Stick by visiting amazon.com/mytv and entering your code." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://yourwebsite.com/amazon-mytv" />
-
-  <!-- ===== SCHEMA MARKUP (Structured Data) ===== -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "HowTo",
-    "name": "How to Activate Amazon Prime Video via amazon.com/mytv",
-    "description": "Step-by-step guide to enter your Amazon MyTV code at amazon.com/mytv to activate Prime Video on your TV.",
-    "step": [
-      {
-        "@type": "HowToStep",
-        "position": 1,
-        "name": "Open Prime Video on your TV",
-        "text": "Launch the Amazon Prime Video app on your Smart TV, Fire Stick, Roku, or Apple TV."
-      },
-      {
-        "@type": "HowToStep",
-        "position": 2,
-        "name": "Get your activation code",
-        "text": "A 6-digit code will appear on your TV screen."
-      },
-      {
-        "@type": "HowToStep",
-        "position": 3,
-        "name": "Visit amazon.com/mytv",
-        "text": "Open a browser on your phone or computer and go to amazon.com/mytv."
-      },
-      {
-        "@type": "HowToStep",
-        "position": 4,
-        "name": "Sign in to Amazon",
-        "text": "Log in to your Amazon account if prompted."
-      },
-      {
-        "@type": "HowToStep",
-        "position": 5,
-        "name": "Enter the code",
-        "text": "Type your 6-digit code and click 'Register Device'. Your TV is now activated!"
-      }
-    ]
-  }
-  </script>
-
-  <!-- ===== FAQ SCHEMA ===== -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "What is amazon.com/mytv?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "amazon.com/mytv is the official Amazon page where you enter a 6-digit activation code to link your TV or streaming device to your Amazon Prime Video account."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How do I get my Amazon MyTV code?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Open the Amazon Prime Video app on your Smart TV, Fire Stick, Roku, or Apple TV. The activation code will appear automatically on your TV screen."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Why is my amazon.com/mytv code not working?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Codes expire after 10–15 minutes. If your code is not working, restart the Prime Video app to get a fresh code, then try again at amazon.com/mytv."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Which devices support amazon.com/mytv activation?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "You can activate Amazon Prime Video via amazon.com/mytv on Fire TV Stick, Roku, Samsung Smart TV, LG TV, Sony TV, Apple TV, PlayStation, Xbox, and more."
-        }
-      }
-    ]
-  }
-  </script>
-
-  <!-- ===== FONTS & STYLES ===== -->
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
-
-  <style>
-    :root {
-      --bg: #0a0e1a;
-      --surface: #111827;
-      --card: #1a2235;
-      --accent: #ff9900;
-      --accent2: #00d4ff;
-      --text: #e8edf5;
-      --muted: #8899aa;
-      --border: rgba(255,153,0,0.15);
-      --glow: 0 0 40px rgba(255,153,0,0.12);
-    }
-
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: 'DM Sans', sans-serif;
-      font-size: 16px;
-      line-height: 1.7;
-      overflow-x: hidden;
-    }
-
-    /* Background mesh */
-    body::before {
-      content: '';
-      position: fixed;
-      inset: 0;
-      background:
-        radial-gradient(ellipse 80% 40% at 20% 10%, rgba(255,153,0,0.08) 0%, transparent 60%),
-        radial-gradient(ellipse 60% 50% at 80% 80%, rgba(0,212,255,0.06) 0%, transparent 60%);
-      pointer-events: none;
-      z-index: 0;
-    }
-
-    .wrapper { position: relative; z-index: 1; max-width: 900px; margin: 0 auto; padding: 0 20px; }
-
-    /* ====== HEADER ====== */
-    header {
-      background: rgba(10,14,26,0.95);
-      border-bottom: 1px solid var(--border);
-      padding: 18px 0;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      backdrop-filter: blur(12px);
-    }
-    header .wrapper { display: flex; align-items: center; gap: 14px; }
-    .logo-badge {
-      background: var(--accent);
-      color: #000;
-      font-family: 'Syne', sans-serif;
-      font-weight: 800;
-      font-size: 13px;
-      padding: 4px 12px;
-      border-radius: 4px;
-      letter-spacing: 0.5px;
-    }
-    .logo-text {
-      font-family: 'Syne', sans-serif;
-      font-weight: 700;
-      font-size: 18px;
-      color: var(--text);
-    }
-    .logo-text span { color: var(--accent); }
-
-    /* ====== HERO ====== */
-    .hero {
-      padding: 80px 0 60px;
-      text-align: center;
-    }
-    .hero-eyebrow {
-      display: inline-block;
-      font-size: 12px;
-      font-weight: 500;
-      letter-spacing: 2.5px;
-      text-transform: uppercase;
-      color: var(--accent);
-      border: 1px solid rgba(255,153,0,0.3);
-      padding: 5px 16px;
-      border-radius: 100px;
-      margin-bottom: 24px;
-      animation: fadeUp 0.6s ease both;
-    }
-    h1 {
-      font-family: 'Syne', sans-serif;
-      font-size: clamp(2rem, 5vw, 3.2rem);
-      font-weight: 800;
-      line-height: 1.15;
-      margin-bottom: 20px;
-      animation: fadeUp 0.7s ease both;
-    }
-    h1 .highlight { color: var(--accent); }
-    .hero-sub {
-      font-size: 1.1rem;
-      color: var(--muted);
-      max-width: 600px;
-      margin: 0 auto 36px;
-      animation: fadeUp 0.8s ease both;
-    }
-    .hero-cta {
-      display: inline-block;
-      background: var(--accent);
-      color: #000;
-      font-family: 'Syne', sans-serif;
-      font-weight: 700;
-      font-size: 15px;
-      padding: 14px 36px;
-      border-radius: 6px;
-      text-decoration: none;
-      letter-spacing: 0.3px;
-      transition: all 0.2s ease;
-      animation: fadeUp 0.9s ease both;
-    }
-    .hero-cta:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(255,153,0,0.35); }
-
-    /* ====== STEPS ====== */
-    .steps-section { padding: 60px 0; }
-    h2 {
-      font-family: 'Syne', sans-serif;
-      font-weight: 700;
-      font-size: clamp(1.4rem, 3vw, 2rem);
-      margin-bottom: 10px;
-    }
-    .section-sub { color: var(--muted); margin-bottom: 40px; }
-
-    .steps-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
-    }
-    .step-card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 28px 24px;
-      position: relative;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-    .step-card:hover { transform: translateY(-4px); box-shadow: var(--glow); }
-    .step-num {
-      width: 40px; height: 40px;
-      background: linear-gradient(135deg, var(--accent), #ffb84d);
-      color: #000;
-      font-family: 'Syne', sans-serif;
-      font-weight: 800;
-      font-size: 16px;
-      border-radius: 10px;
-      display: flex; align-items: center; justify-content: center;
-      margin-bottom: 16px;
-    }
-    .step-card h3 { font-family: 'Syne', sans-serif; font-size: 1rem; font-weight: 700; margin-bottom: 8px; }
-    .step-card p { font-size: 0.92rem; color: var(--muted); line-height: 1.6; }
-
-    /* ====== DEVICES ====== */
-    .devices-section { padding: 50px 0; }
-    .devices-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-      gap: 14px;
-      margin-top: 36px;
-    }
-    .device-chip {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 14px 12px;
-      text-align: center;
-      font-size: 0.88rem;
-      color: var(--muted);
-      transition: all 0.2s ease;
-    }
-    .device-chip:hover { border-color: var(--accent); color: var(--text); }
-    .device-icon { font-size: 1.6rem; display: block; margin-bottom: 8px; }
-
-    /* ====== FAQ ====== */
-    .faq-section { padding: 50px 0 70px; }
-    .faq-list { display: flex; flex-direction: column; gap: 14px; margin-top: 36px; }
-    .faq-item {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      overflow: hidden;
-    }
-    .faq-q {
-      width: 100%;
-      background: none;
-      border: none;
-      padding: 20px 24px;
-      text-align: left;
-      color: var(--text);
-      font-family: 'Syne', sans-serif;
-      font-weight: 700;
-      font-size: 0.97rem;
-      cursor: pointer;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 12px;
-    }
-    .faq-icon { color: var(--accent); font-size: 1.3rem; transition: transform 0.25s ease; flex-shrink: 0; }
-    .faq-a {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.35s ease, padding 0.25s ease;
-      padding: 0 24px;
-      color: var(--muted);
-      font-size: 0.93rem;
-    }
-    .faq-item.open .faq-a { max-height: 200px; padding: 0 24px 20px; }
-    .faq-item.open .faq-icon { transform: rotate(45deg); }
-
-    /* ====== CONTENT SECTION (important for SEO) ====== */
-    .content-section {
-      padding: 50px 0;
-      border-top: 1px solid var(--border);
-    }
-    .content-section p { color: var(--muted); margin-bottom: 16px; font-size: 0.97rem; }
-    .content-section h2 { margin-bottom: 24px; }
-    .content-section h3 { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 1.05rem; margin: 24px 0 10px; color: var(--text); }
-    .content-section a { color: var(--accent); text-decoration: none; }
-    .content-section a:hover { text-decoration: underline; }
-
-    /* ====== FOOTER ====== */
-    footer {
-      border-top: 1px solid var(--border);
-      padding: 28px 0;
-      text-align: center;
-      font-size: 0.84rem;
-      color: var(--muted);
-    }
-    footer a { color: var(--accent); text-decoration: none; }
-
-    /* ====== ANIMATIONS ====== */
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(24px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    /* ====== RESPONSIVE ====== */
-    @media (max-width: 600px) {
-      .steps-grid { grid-template-columns: 1fr; }
-      .devices-grid { grid-template-columns: repeat(3, 1fr); }
-    }
-  </style>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Activate Amazon Prime Video via amazon.com/mytv – All TV Brands (2026)</title>
+<meta name="description" content="Activate Amazon Prime Video on Samsung, LG, Sony, Fire Stick, Roku, Apple TV and more using amazon.com/mytv. Device-specific step-by-step guides."/>
+<meta name="keywords" content="amazon prime video activate, amazon.com/mytv activate, activate amazon tv, amazon mytv samsung, amazon mytv fire stick, amazon mytv roku"/>
+<link rel="canonical" href="https://yourwebsite.com/amazon-mytv-activate"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"How do I activate Amazon Prime Video on Samsung TV?","acceptedAnswer":{"@type":"Answer","text":"Open the Smart Hub on your Samsung TV, launch Amazon Prime Video, select 'Register on the Amazon Website', note the code shown, then go to amazon.com/mytv on your phone and enter the code."}},
+{"@type":"Question","name":"How do I activate Amazon on Roku via amazon.com/mytv?","acceptedAnswer":{"@type":"Answer","text":"On your Roku, go to Streaming Channels, install Amazon Video, open it, and choose Sign In. A code will appear. Visit amazon.com/mytv on your phone and enter this code to activate."}},
+{"@type":"Question","name":"How do I activate Prime Video on Fire TV Stick?","acceptedAnswer":{"@type":"Answer","text":"On your Fire TV Stick, the Amazon account used during setup is automatically linked. If you need to relink, go to Settings > My Account > Deregister, then set up again through amazon.com/mytv."}}
+]}</script>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<style>
+:root{--bg:#0a0e1a;--surface:#111827;--card:#1a2235;--accent:#ff9900;--accent2:#00d4ff;--text:#e8edf5;--muted:#8899aa;--border:rgba(255,153,0,0.15);--glow:0 0 40px rgba(255,153,0,0.12)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;line-height:1.7;overflow-x:hidden}
+body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellipse 80% 40% at 20% 10%,rgba(255,153,0,0.08) 0%,transparent 60%),radial-gradient(ellipse 60% 50% at 80% 80%,rgba(0,212,255,0.06) 0%,transparent 60%);pointer-events:none;z-index:0}
+.wrapper{position:relative;z-index:1;max-width:920px;margin:0 auto;padding:0 20px}
+header{background:rgba(10,14,26,0.95);border-bottom:1px solid var(--border);padding:16px 0;position:sticky;top:0;z-index:100;backdrop-filter:blur(12px)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;gap:14px}
+.logo-area{display:flex;align-items:center;gap:10px}
+.logo-badge{background:var(--accent);color:#000;font-family:'Syne',sans-serif;font-weight:800;font-size:13px;padding:4px 12px;border-radius:4px}
+.logo-text{font-family:'Syne',sans-serif;font-weight:700;font-size:18px;color:var(--text);text-decoration:none}
+.logo-text span{color:var(--accent)}
+nav{display:flex;gap:4px}
+nav a{font-size:12px;color:var(--muted);text-decoration:none;padding:6px 12px;border-radius:6px;border:1px solid transparent;transition:all 0.2s}
+nav a:hover,nav a.active{border-color:var(--border);color:var(--accent);background:rgba(255,153,0,0.06)}
+h1{font-family:'Syne',sans-serif;font-size:clamp(1.8rem,5vw,2.9rem);font-weight:800;line-height:1.15;margin-bottom:18px}
+h2{font-family:'Syne',sans-serif;font-weight:700;font-size:clamp(1.2rem,3vw,1.75rem);margin-bottom:12px}
+h3{font-family:'Syne',sans-serif;font-weight:700;font-size:1rem;margin:0 0 10px}
+.highlight{color:var(--accent)}
+.eyebrow{display:inline-block;font-size:12px;letter-spacing:2.5px;text-transform:uppercase;color:var(--accent);border:1px solid rgba(255,153,0,0.3);padding:5px 16px;border-radius:100px;margin-bottom:22px}
+.hero{padding:65px 0 45px;text-align:center}
+.hero-sub{font-size:1.05rem;color:var(--muted);max-width:580px;margin:0 auto 30px}
+.btn{display:inline-block;background:var(--accent);color:#000;font-family:'Syne',sans-serif;font-weight:700;font-size:14px;padding:13px 30px;border-radius:6px;text-decoration:none;transition:all 0.2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(255,153,0,0.35)}
+section{padding:45px 0}
+.section-sub{color:var(--muted);margin-bottom:32px;font-size:0.95rem}
+p{color:var(--muted);margin-bottom:12px;font-size:0.95rem}
+/* Device tabs */
+.tab-buttons{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px}
+.tab-btn{background:var(--card);border:1px solid var(--border);color:var(--muted);font-family:'Syne',sans-serif;font-weight:700;font-size:12px;padding:9px 18px;border-radius:8px;cursor:pointer;transition:all 0.2s;display:flex;align-items:center;gap:6px}
+.tab-btn:hover{border-color:rgba(255,153,0,0.4);color:var(--text)}
+.tab-btn.active{background:rgba(255,153,0,0.1);border-color:rgba(255,153,0,0.5);color:var(--accent)}
+.device-panel{display:none;background:var(--card);border:1px solid var(--border);border-radius:14px;padding:30px}
+.device-panel.active{display:block}
+.device-panel h3{margin-bottom:6px;font-size:1.1rem}
+.device-panel .device-sub{color:var(--muted);font-size:0.9rem;margin-bottom:24px}
+.steps-list{display:flex;flex-direction:column;gap:12px}
+.step-row{display:flex;gap:14px;align-items:flex-start}
+.step-n{width:32px;height:32px;background:linear-gradient(135deg,var(--accent),#ffb84d);color:#000;font-family:'Syne',sans-serif;font-weight:800;font-size:13px;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+.step-text{font-size:0.93rem;color:var(--muted);padding-top:4px}
+.step-text strong{color:var(--text)}
+/* General flow */
+.flow-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin-top:8px}
+.flow-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:22px 18px}
+.flow-num{font-family:'Syne',sans-serif;font-weight:800;font-size:2rem;color:rgba(255,153,0,0.2);margin-bottom:6px}
+.flow-card h3{font-size:0.93rem;margin:0 0 6px}
+.flow-card p{font-size:0.87rem;margin:0}
+/* FAQ */
+.faq-item{background:var(--card);border:1px solid var(--border);border-radius:10px;overflow:hidden;margin-bottom:12px}
+.faq-q{width:100%;background:none;border:none;padding:18px 22px;text-align:left;color:var(--text);font-family:'Syne',sans-serif;font-weight:700;font-size:0.93rem;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:10px}
+.faq-icon{color:var(--accent);font-size:1.2rem;transition:transform 0.25s;flex-shrink:0}
+.faq-a{max-height:0;overflow:hidden;transition:max-height 0.35s ease,padding 0.25s;padding:0 22px;color:var(--muted);font-size:0.91rem}
+.faq-item.open .faq-a{max-height:220px;padding:0 22px 18px}
+.faq-item.open .faq-icon{transform:rotate(45deg)}
+footer{border-top:1px solid var(--border);padding:28px 0;text-align:center;font-size:0.84rem;color:var(--muted)}
+footer .links{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:10px}
+footer a{color:var(--accent);text-decoration:none}
+@media(max-width:600px){nav{display:none}.flow-grid{grid-template-columns:1fr}}
+</style>
 </head>
 <body>
+<!-- DISCLAIMER BANNER -->
+<div style="background:rgba(255,153,0,0.10);border-bottom:1px solid rgba(255,153,0,0.25);padding:10px 0;text-align:center;font-size:12.5px;color:#aab8cc;font-family:'DM Sans',sans-serif;position:relative;z-index:200;">
+  <div style="max-width:900px;margin:0 auto;padding:0 20px;line-height:1.6;">
+    &#9888;&#65039; <strong style="color:#ff9900;">Disclaimer:</strong> Ye website sirf <strong style="color:#e8edf5;">informational purpose</strong> ke liye hai. Hum Amazon nahi hain aur Amazon se humara koi sambandh nahi hai. Official support ke liye <a href="https://www.amazon.com/mytv" target="_blank" style="color:#ff9900;text-decoration:underline;">amazon.com/mytv</a> pe directly jaayein. Amazon aur Prime Video, Amazon.com, Inc. ke registered trademarks hain.
+  </div>
+</div>
 
-<!-- ===== HEADER ===== -->
 <header>
   <div class="wrapper">
-    <span class="logo-badge">▶</span>
-    <span class="logo-text">amazon.com/<span>mytv</span></span>
+    <div class="nav-inner">
+      <div class="logo-area">
+        <span class="logo-badge">▶</span>
+        <a href="index.html" class="logo-text">amazon.com/<span>mytv</span></a>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="amazon-mytv-code.html">Enter Code</a>
+        <a href="amazon-mytv-not-working.html">Not Working?</a>
+        <a href="amazon-mytv-activate.html" class="active">Activate TV</a>
+        <a href="amazon-mytv-devices.html">Devices</a>
+      </nav>
+    </div>
   </div>
 </header>
 
-<!-- ===== HERO ===== -->
 <section class="hero">
   <div class="wrapper">
-    <span class="hero-eyebrow">Official Activation Guide</span>
+    <span class="eyebrow">Device Activation Guide</span>
     <h1>Activate Prime Video at<br><span class="highlight">amazon.com/mytv</span></h1>
-    <p class="hero-sub">Enter your 6-digit code shown on your TV screen to instantly link your device to Amazon Prime Video.</p>
-    <a href="https://www.amazon.com/mytv" target="_blank" rel="noopener noreferrer" class="hero-cta">→ Go to amazon.com/mytv</a>
+    <p class="hero-sub">Step-by-step activation guide for every TV brand and streaming device. Pick your device below.</p>
+    <a href="https://www.amazon.com/mytv" target="_blank" rel="noopener" class="btn">→ Go to amazon.com/mytv</a>
   </div>
 </section>
 
-<!-- ===== STEPS ===== -->
-<section class="steps-section">
+<section>
   <div class="wrapper">
-    <h2>How to Enter Your Code at amazon.com/mytv</h2>
-    <p class="section-sub">Follow these 5 simple steps to activate your device in under 2 minutes.</p>
-    <div class="steps-grid">
-      <div class="step-card">
-        <div class="step-num">1</div>
-        <h3>Open Prime Video on Your TV</h3>
-        <p>Launch the Amazon Prime Video app on your Smart TV, Fire Stick, Roku, or Apple TV.</p>
+    <h2>Activate by Device — Pick Yours</h2>
+    <p class="section-sub">Select your device for a specific activation guide.</p>
+    <div class="tab-buttons">
+      <button class="tab-btn active" onclick="showDevice('firestick')">🔥 Fire Stick</button>
+      <button class="tab-btn" onclick="showDevice('roku')">📺 Roku</button>
+      <button class="tab-btn" onclick="showDevice('samsung')">🔵 Samsung TV</button>
+      <button class="tab-btn" onclick="showDevice('lg')">🔴 LG TV</button>
+      <button class="tab-btn" onclick="showDevice('appletv')">🍎 Apple TV</button>
+      <button class="tab-btn" onclick="showDevice('sony')">🎬 Sony TV</button>
+    </div>
+
+    <div id="panel-firestick" class="device-panel active">
+      <h3>🔥 Amazon Fire TV Stick — amazon.com/mytv Activation</h3>
+      <p class="device-sub">Fire Stick is made by Amazon, so it links automatically during setup. Use these steps to re-link or activate on a new account.</p>
+      <div class="steps-list">
+        <div class="step-row"><div class="step-n">1</div><div class="step-text">On Fire Stick home screen, go to <strong>Settings → My Account</strong>.</div></div>
+        <div class="step-row"><div class="step-n">2</div><div class="step-text">Select <strong>Amazon Account</strong>. If already registered, click <strong>Deregister</strong> first.</div></div>
+        <div class="step-row"><div class="step-n">3</div><div class="step-text">Open <strong>Amazon Prime Video</strong> app. A code will appear.</div></div>
+        <div class="step-row"><div class="step-n">4</div><div class="step-text">On your phone, go to <strong>amazon.com/mytv</strong> and sign in.</div></div>
+        <div class="step-row"><div class="step-n">5</div><div class="step-text">Enter the code from your Fire Stick screen and click <strong>Register Device</strong>. Done!</div></div>
       </div>
-      <div class="step-card">
-        <div class="step-num">2</div>
-        <h3>Find Your Activation Code</h3>
-        <p>A unique 6-digit code will appear automatically on your TV screen. Note it down.</p>
+    </div>
+
+    <div id="panel-roku" class="device-panel">
+      <h3>📺 Roku — amazon.com/mytv Activation</h3>
+      <p class="device-sub">Activate Amazon Prime Video on any Roku device using amazon.com/mytv.</p>
+      <div class="steps-list">
+        <div class="step-row"><div class="step-n">1</div><div class="step-text">On Roku home screen, go to <strong>Streaming Channels → Search Channels</strong>.</div></div>
+        <div class="step-row"><div class="step-n">2</div><div class="step-text">Search for <strong>Amazon Video</strong> and install the channel.</div></div>
+        <div class="step-row"><div class="step-n">3</div><div class="step-text">Open Amazon Video and select <strong>Sign In</strong>. A 6-digit code appears.</div></div>
+        <div class="step-row"><div class="step-n">4</div><div class="step-text">Visit <strong>amazon.com/mytv</strong> on your phone and sign into your Amazon account.</div></div>
+        <div class="step-row"><div class="step-n">5</div><div class="step-text">Enter the Roku code and click <strong>Register Device</strong>. Your Roku is now activated.</div></div>
       </div>
-      <div class="step-card">
-        <div class="step-num">3</div>
-        <h3>Visit amazon.com/mytv</h3>
-        <p>On your phone or computer browser, navigate to <strong>amazon.com/mytv</strong>.</p>
+    </div>
+
+    <div id="panel-samsung" class="device-panel">
+      <h3>🔵 Samsung Smart TV — amazon.com/mytv Activation</h3>
+      <p class="device-sub">Works on all Samsung Smart TVs from 2016 onwards with Tizen OS.</p>
+      <div class="steps-list">
+        <div class="step-row"><div class="step-n">1</div><div class="step-text">Press the <strong>Home</strong> button on your Samsung remote to open Smart Hub.</div></div>
+        <div class="step-row"><div class="step-n">2</div><div class="step-text">Navigate to the <strong>Amazon Prime Video</strong> app and launch it.</div></div>
+        <div class="step-row"><div class="step-n">3</div><div class="step-text">Select <strong>"Register on the Amazon Website"</strong> — a 6-digit code appears.</div></div>
+        <div class="step-row"><div class="step-n">4</div><div class="step-text">Open <strong>amazon.com/mytv</strong> on your phone and log in.</div></div>
+        <div class="step-row"><div class="step-n">5</div><div class="step-text">Type the 6-digit code shown on your Samsung TV and click <strong>Register Device</strong>.</div></div>
       </div>
-      <div class="step-card">
-        <div class="step-num">4</div>
-        <h3>Sign In to Amazon</h3>
-        <p>Log into your Amazon account. If you don't have one, create it for free.</p>
+    </div>
+
+    <div id="panel-lg" class="device-panel">
+      <h3>🔴 LG Smart TV — amazon.com/mytv Activation</h3>
+      <p class="device-sub">Works on LG Smart TVs with WebOS (2014 and later models).</p>
+      <div class="steps-list">
+        <div class="step-row"><div class="step-n">1</div><div class="step-text">Press <strong>Home</strong> on your LG remote to access the launcher bar.</div></div>
+        <div class="step-row"><div class="step-n">2</div><div class="step-text">Find and open the <strong>Amazon Prime Video</strong> app (install from LG Content Store if needed).</div></div>
+        <div class="step-row"><div class="step-n">3</div><div class="step-text">Choose <strong>Sign In</strong> → <strong>Register on the Amazon Website</strong>. Note your 6-digit code.</div></div>
+        <div class="step-row"><div class="step-n">4</div><div class="step-text">Go to <strong>amazon.com/mytv</strong> on your phone and sign in to Amazon.</div></div>
+        <div class="step-row"><div class="step-n">5</div><div class="step-text">Enter the 6-digit code and click <strong>Register Device</strong>. Your LG TV is now connected.</div></div>
       </div>
-      <div class="step-card">
-        <div class="step-num">5</div>
-        <h3>Enter Code & Activate</h3>
-        <p>Type your 6-digit code and click <em>Register Device</em>. Your TV is now activated!</p>
+    </div>
+
+    <div id="panel-appletv" class="device-panel">
+      <h3>🍎 Apple TV — amazon.com/mytv Activation</h3>
+      <p class="device-sub">Works on Apple TV HD (4th gen) and Apple TV 4K.</p>
+      <div class="steps-list">
+        <div class="step-row"><div class="step-n">1</div><div class="step-text">On your Apple TV, download <strong>Amazon Prime Video</strong> from the App Store.</div></div>
+        <div class="step-row"><div class="step-n">2</div><div class="step-text">Open the app and select <strong>Sign In</strong>. A code will appear on your TV screen.</div></div>
+        <div class="step-row"><div class="step-n">3</div><div class="step-text">On your iPhone or Mac, visit <strong>amazon.com/mytv</strong> and log into your Amazon account.</div></div>
+        <div class="step-row"><div class="step-n">4</div><div class="step-text">Enter the code shown on your Apple TV and click <strong>Register Device</strong>.</div></div>
+        <div class="step-row"><div class="step-n">5</div><div class="step-text">Your Apple TV will automatically refresh — Prime Video is ready to stream!</div></div>
+      </div>
+    </div>
+
+    <div id="panel-sony" class="device-panel">
+      <h3>🎬 Sony Android TV — amazon.com/mytv Activation</h3>
+      <p class="device-sub">Works on Sony Bravia TVs running Android TV (2015 and newer).</p>
+      <div class="steps-list">
+        <div class="step-row"><div class="step-n">1</div><div class="step-text">Press <strong>Home</strong> on your Sony remote and open <strong>Google Play Store</strong>.</div></div>
+        <div class="step-row"><div class="step-n">2</div><div class="step-text">Search for and install <strong>Amazon Prime Video</strong> if not already installed.</div></div>
+        <div class="step-row"><div class="step-n">3</div><div class="step-text">Open the app, choose <strong>Sign In</strong>, and get your activation code.</div></div>
+        <div class="step-row"><div class="step-n">4</div><div class="step-text">Visit <strong>amazon.com/mytv</strong> on your phone or computer.</div></div>
+        <div class="step-row"><div class="step-n">5</div><div class="step-text">Enter the code and click <strong>Register Device</strong>. Sony TV is now activated.</div></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===== DEVICES ===== -->
-<section class="devices-section">
+<section>
   <div class="wrapper">
-    <h2>Supported Devices for amazon.com/mytv</h2>
-    <p class="section-sub">Works with all major streaming devices and smart TVs.</p>
-    <div class="devices-grid">
-      <div class="device-chip"><span class="device-icon">🔥</span>Fire TV Stick</div>
-      <div class="device-chip"><span class="device-icon">📺</span>Roku</div>
-      <div class="device-chip"><span class="device-icon">🍎</span>Apple TV</div>
-      <div class="device-chip"><span class="device-icon">🎮</span>PlayStation</div>
-      <div class="device-chip"><span class="device-icon">🎮</span>Xbox</div>
-      <div class="device-chip"><span class="device-icon">📺</span>Samsung TV</div>
-      <div class="device-chip"><span class="device-icon">📺</span>LG Smart TV</div>
-      <div class="device-chip"><span class="device-icon">📺</span>Sony TV</div>
-      <div class="device-chip"><span class="device-icon">📺</span>Android TV</div>
-      <div class="device-chip"><span class="device-icon">💻</span>Chromecast</div>
-      <div class="device-chip"><span class="device-icon">📱</span>Android</div>
-      <div class="device-chip"><span class="device-icon">📱</span>iPhone/iPad</div>
+    <h2>Universal Activation Process</h2>
+    <p class="section-sub">Regardless of your device, amazon.com/mytv activation always follows this 4-step flow.</p>
+    <div class="flow-grid">
+      <div class="flow-card"><div class="flow-num">01</div><h3>Get Code on TV</h3><p>Open Prime Video app → choose Register → note the 6-digit code.</p></div>
+      <div class="flow-card"><div class="flow-num">02</div><h3>Visit amazon.com/mytv</h3><p>Open on phone/computer within 10 minutes of seeing the code.</p></div>
+      <div class="flow-card"><div class="flow-num">03</div><h3>Sign In</h3><p>Log into your Amazon account (the one with Prime subscription).</p></div>
+      <div class="flow-card"><div class="flow-num">04</div><h3>Enter & Activate</h3><p>Type the 6 digits and click Register Device. TV auto-refreshes.</p></div>
     </div>
   </div>
 </section>
 
-<!-- ===== FAQ ===== -->
-<section class="faq-section">
+<section>
   <div class="wrapper">
-    <h2>Frequently Asked Questions – amazon.com/mytv</h2>
-    <p class="section-sub">Common questions about Amazon MyTV activation.</p>
-    <div class="faq-list">
-
-      <div class="faq-item">
-        <button class="faq-q" aria-expanded="false">
-          What is amazon.com/mytv?
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-a">
-          amazon.com/mytv is Amazon's official activation portal. You visit this page and enter a 6-digit code displayed on your TV to connect it to your Amazon account and start watching Prime Video.
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-q" aria-expanded="false">
-          My amazon.com/mytv code is not working – what to do?
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-a">
-          Activation codes expire after 10–15 minutes. Close and reopen the Prime Video app on your TV to generate a new code, then visit amazon.com/mytv again and enter the fresh code.
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-q" aria-expanded="false">
-          Do I need a Prime subscription to use amazon.com/mytv?
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-a">
-          You need an Amazon account to activate via amazon.com/mytv. An Amazon Prime subscription is required to watch Prime Video content. You can start a free trial if you don't have one.
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-q" aria-expanded="false">
-          How many devices can I activate with amazon.com/mytv?
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-a">
-          Amazon allows you to register multiple devices on a single account via amazon.com/mytv. You can manage registered devices anytime from your Amazon account settings under "Manage Your Content and Devices."
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-q" aria-expanded="false">
-          Is amazon.com/mytv safe to use?
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-a">
-          Yes, amazon.com/mytv is Amazon's official and legitimate activation URL. Always make sure you are visiting the real Amazon website (amazon.com) to protect your account credentials.
-        </div>
-      </div>
-
+    <h2>FAQ – Activation via amazon.com/mytv</h2>
+    <div class="faq-item">
+      <button class="faq-q">How long does amazon.com/mytv activation take? <span class="faq-icon">+</span></button>
+      <div class="faq-a">Activation via amazon.com/mytv takes about 1–2 minutes total. After you click Register Device, your TV automatically refreshes within 30 seconds and Prime Video opens up.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">Can I use amazon.com/mytv to activate multiple TVs? <span class="faq-icon">+</span></button>
+      <div class="faq-a">Yes! You can activate multiple devices on one Amazon account. Just repeat the process for each device — get a new code on each TV and enter it at amazon.com/mytv separately. Amazon allows up to several registered devices per account.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">Do I need to re-activate every time I restart my TV? <span class="faq-icon">+</span></button>
+      <div class="faq-a">No. Once you've activated your TV through amazon.com/mytv, it stays registered permanently — unless you deregister it manually, factory reset your TV, or sign out of the Prime Video app.</div>
     </div>
   </div>
 </section>
 
-<!-- ===== SEO CONTENT BLOCK ===== -->
-<section class="content-section">
-  <div class="wrapper">
-    <h2>Complete Guide to amazon.com/mytv Activation</h2>
-
-    <p>
-      <strong>amazon.com/mytv</strong> is the dedicated device activation page provided by Amazon for linking Smart TVs, streaming sticks, and gaming consoles to your Prime Video account. Whether you own a Fire TV Stick, a Roku device, an LG Smart TV, or a PlayStation console, the activation process always begins the same way — by visiting <a href="https://www.amazon.com/mytv" target="_blank" rel="noopener noreferrer">amazon.com/mytv</a>.
-    </p>
-
-    <h3>Why Do You Need to Activate at amazon.com/mytv?</h3>
-    <p>
-      When you install Amazon Prime Video on a new device, Amazon needs to verify your identity securely. Instead of entering your full password on a TV remote (which is slow and error-prone), Amazon generates a short 6-digit code on your TV and asks you to enter it on a phone or computer at amazon.com/mytv. This makes activation fast, secure, and simple.
-    </p>
-
-    <h3>Common Issues with amazon.com/mytv and How to Fix Them</h3>
-    <p>
-      The most common problem users face is an expired code. Since codes generated for amazon.com/mytv are valid only for a short window (usually 10–15 minutes), make sure you enter the code promptly. If the code has expired, simply restart the Prime Video app to get a new one.
-    </p>
-    <p>
-      Another issue can be signing in to the wrong Amazon account. If you have multiple accounts, ensure you are logged into the correct one at amazon.com/mytv before entering your code.
-    </p>
-
-    <h3>Using amazon.com/mytv Outside the US</h3>
-    <p>
-      The amazon.com/mytv page is globally accessible. Depending on your country, you may be redirected to your local Amazon store (e.g., amazon.co.uk/mytv for the UK, amazon.in/mytv for India). The activation steps remain the same across all regions.
-    </p>
-  </div>
-</section>
-
-<!-- ===== FOOTER ===== -->
 <footer>
   <div class="wrapper">
-    <p>This is an informational guide. For official support, visit <a href="https://www.amazon.com/mytv" target="_blank" rel="noopener noreferrer">amazon.com/mytv</a> directly.</p>
-    <p style="margin-top:8px;">© 2026 Your Website Name · <a href="#">Privacy Policy</a> · <a href="#">Contact</a></p>
+    <p>Informational guide only. Official support: <a href="https://www.amazon.com/mytv" target="_blank">amazon.com/mytv</a></p>
+    <div class="links">
+      <a href="index.html">Home</a><a href="amazon-mytv-code.html">Enter Code</a><a href="amazon-mytv-not-working.html">Not Working?</a><a href="amazon-mytv-activate.html">Activate TV</a><a href="amazon-mytv-devices.html">Devices</a>
+    </div>
+    <p style="margin-top:14px">© 2026 Your Website Name</p>
   </div>
 </footer>
-
-<!-- ===== FAQ ACCORDION JS ===== -->
 <script>
-  document.querySelectorAll('.faq-q').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const item = btn.closest('.faq-item');
-      const isOpen = item.classList.contains('open');
-      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
-      if (!isOpen) item.classList.add('open');
-      btn.setAttribute('aria-expanded', !isOpen);
-    });
-  });
+function showDevice(id){
+  document.querySelectorAll('.device-panel').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+  document.getElementById('panel-'+id).classList.add('active');
+  event.target.closest('.tab-btn').classList.add('active');
+}
+document.querySelectorAll('.faq-q').forEach(btn=>{
+  btn.addEventListener('click',()=>{const item=btn.closest('.faq-item');const isOpen=item.classList.contains('open');document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));if(!isOpen)item.classList.add('open')});
+});
 </script>
-
 </body>
 </html>
