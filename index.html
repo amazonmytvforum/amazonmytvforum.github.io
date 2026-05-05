@@ -19,7 +19,9 @@
   <meta property="og:type" content="https://yourwebsite.com/amazon-mytv" />
   <meta property="og:url" content="https://yourwebsite.com/amazon-mytv" />
 
-  <!-- ===== SCHEMA MARKUP (Structured Data) ===== -->
+
+
+ <!-- ===== SCHEMA MARKUP (Structured Data) ===== -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -60,7 +62,7 @@
     ]
   }
   </script>
-
+ 
   <!-- ===== FAQ SCHEMA ===== -->
   <script type="application/ld+json">
   {
@@ -102,10 +104,10 @@
     ]
   }
   </script>
-
+ 
   <!-- ===== FONTS & STYLES ===== -->
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
-
+ 
   <style>
     :root {
       --bg: #0a0e1a;
@@ -118,9 +120,9 @@
       --border: rgba(255,153,0,0.15);
       --glow: 0 0 40px rgba(255,153,0,0.12);
     }
-
+ 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
+ 
     body {
       background: var(--bg);
       color: var(--text);
@@ -129,7 +131,7 @@
       line-height: 1.7;
       overflow-x: hidden;
     }
-
+ 
     /* Background mesh */
     body::before {
       content: '';
@@ -141,20 +143,21 @@
       pointer-events: none;
       z-index: 0;
     }
-
+ 
     .wrapper { position: relative; z-index: 1; max-width: 900px; margin: 0 auto; padding: 0 20px; }
-
+ 
     /* ====== HEADER ====== */
     header {
       background: rgba(10,14,26,0.95);
       border-bottom: 1px solid var(--border);
-      padding: 18px 0;
+      padding: 16px 0;
       position: sticky;
       top: 0;
       z-index: 100;
       backdrop-filter: blur(12px);
     }
-    header .wrapper { display: flex; align-items: center; gap: 14px; }
+    header .wrapper { display: flex; align-items: center; justify-content: space-between; gap: 14px; }
+    .logo-area { display: flex; align-items: center; gap: 10px; }
     .logo-badge {
       background: var(--accent);
       color: #000;
@@ -170,9 +173,26 @@
       font-weight: 700;
       font-size: 18px;
       color: var(--text);
+      text-decoration: none;
     }
     .logo-text span { color: var(--accent); }
-
+    nav { display: flex; gap: 4px; flex-wrap: wrap; }
+    nav a {
+      font-size: 12px;
+      color: var(--muted);
+      text-decoration: none;
+      padding: 6px 12px;
+      border-radius: 6px;
+      border: 1px solid transparent;
+      transition: all 0.2s;
+    }
+    nav a:hover, nav a.active {
+      border-color: var(--border);
+      color: var(--accent);
+      background: rgba(255,153,0,0.06);
+    }
+    @media (max-width: 600px) { nav { display: none; } }
+ 
     /* ====== HERO ====== */
     .hero {
       padding: 80px 0 60px;
@@ -222,7 +242,7 @@
       animation: fadeUp 0.9s ease both;
     }
     .hero-cta:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(255,153,0,0.35); }
-
+ 
     /* ====== STEPS ====== */
     .steps-section { padding: 60px 0; }
     h2 {
@@ -232,7 +252,7 @@
       margin-bottom: 10px;
     }
     .section-sub { color: var(--muted); margin-bottom: 40px; }
-
+ 
     .steps-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -260,7 +280,7 @@
     }
     .step-card h3 { font-family: 'Syne', sans-serif; font-size: 1rem; font-weight: 700; margin-bottom: 8px; }
     .step-card p { font-size: 0.92rem; color: var(--muted); line-height: 1.6; }
-
+ 
     /* ====== DEVICES ====== */
     .devices-section { padding: 50px 0; }
     .devices-grid {
@@ -281,7 +301,7 @@
     }
     .device-chip:hover { border-color: var(--accent); color: var(--text); }
     .device-icon { font-size: 1.6rem; display: block; margin-bottom: 8px; }
-
+ 
     /* ====== FAQ ====== */
     .faq-section { padding: 50px 0 70px; }
     .faq-list { display: flex; flex-direction: column; gap: 14px; margin-top: 36px; }
@@ -318,7 +338,7 @@
     }
     .faq-item.open .faq-a { max-height: 200px; padding: 0 24px 20px; }
     .faq-item.open .faq-icon { transform: rotate(45deg); }
-
+ 
     /* ====== CONTENT SECTION (important for SEO) ====== */
     .content-section {
       padding: 50px 0;
@@ -329,7 +349,7 @@
     .content-section h3 { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 1.05rem; margin: 24px 0 10px; color: var(--text); }
     .content-section a { color: var(--accent); text-decoration: none; }
     .content-section a:hover { text-decoration: underline; }
-
+ 
     /* ====== FOOTER ====== */
     footer {
       border-top: 1px solid var(--border);
@@ -339,13 +359,13 @@
       color: var(--muted);
     }
     footer a { color: var(--accent); text-decoration: none; }
-
+ 
     /* ====== ANIMATIONS ====== */
     @keyframes fadeUp {
       from { opacity: 0; transform: translateY(24px); }
       to { opacity: 1; transform: translateY(0); }
     }
-
+ 
     /* ====== RESPONSIVE ====== */
     @media (max-width: 600px) {
       .steps-grid { grid-template-columns: 1fr; }
@@ -354,43 +374,41 @@
   </style>
 </head>
 <body>
-
-
-  <div style="background:rgba(255,153,0,0.10);border-bottom:1px solid rgba(255,153,0,0.25);padding:10px 0;text-align:center;font-size:12.5px;color:#aab8cc;font-family:'DM Sans',sans-serif;position:relative;z-index:200;">
+<!-- DISCLAIMER BANNER -->
+<div style="background:rgba(255,153,0,0.10);border-bottom:1px solid rgba(255,153,0,0.25);padding:10px 0;text-align:center;font-size:12.5px;color:#aab8cc;font-family:'DM Sans',sans-serif;position:relative;z-index:200;">
   <div style="max-width:900px;margin:0 auto;padding:0 20px;line-height:1.6;">
     &#9888;&#65039; <strong style="color:#ff9900;">Disclaimer:</strong> This website is for <strong style="color:#e8edf5;">informational purposes only</strong>. We are not Amazon and have no affiliation with Amazon. For official support, visit <a href="https://www.amazon.com/mytv" target="_blank" style="color:#ff9900;text-decoration:underline;">amazon.com/mytv</a> directly. Amazon and Prime Video are registered trademarks of Amazon.com, Inc.
   </div>
 </div>
-
+ 
+ 
 <!-- ===== HEADER ===== -->
 <header>
   <div class="wrapper">
-    <div class="nav-inner">
-      <div class="logo-area">
-        <span class="logo-badge">▶</span>
-        <a href="index.html" class="logo-text">amazon.com/<span>mytv</span></a>
-      </div>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="amazon-mytv-code.html">Enter Code</a>
-        <a href="amazon-mytv-not-working.html" class="active">Not Working?</a>
-        <a href="amazon-mytv-activate.html">Activate TV</a>
-        <a href="amazon-mytv-devices.html">Devices</a>
-      </nav>
+    <div class="logo-area">
+      <span class="logo-badge">▶</span>
+      <a href="index.html" class="logo-text">amazon.com/<span>mytv</span></a>
     </div>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="amazon-mytv-code.html">Enter Code</a>
+      <a href="amazon-mytv-not-working.html">Not Working?</a>
+      <a href="amazon-mytv-activate.html">Activate TV</a>
+      <a href="amazon-mytv-devices.html">Devices</a>
+    </nav>
   </div>
 </header>
-
+ 
 <!-- ===== HERO ===== -->
 <section class="hero">
   <div class="wrapper">
     <span class="hero-eyebrow">Official Activation Guide</span>
     <h1>Activate Prime Video at<br><span class="highlight">amazon.com/mytv</span></h1>
     <p class="hero-sub">Enter your 6-digit code shown on your TV screen to instantly link your device to Amazon Prime Video.</p>
-    <a href="https://us00.net/?1eGz61VJppAtkAFdeKJUTc15ifduglp39sq8Q229KsVfL" target="_blank" rel="noopener noreferrer" class="hero-cta">→ Go to amazon.com/mytv</a>
+    <a href="https://www.amazon.com/mytv" target="_blank" rel="noopener noreferrer" class="hero-cta">→ Go to amazon.com/mytv</a>
   </div>
 </section>
-
+ 
 <!-- ===== STEPS ===== -->
 <section class="steps-section">
   <div class="wrapper">
@@ -425,7 +443,7 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- ===== DEVICES ===== -->
 <section class="devices-section">
   <div class="wrapper">
@@ -447,14 +465,14 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- ===== FAQ ===== -->
 <section class="faq-section">
   <div class="wrapper">
     <h2>Frequently Asked Questions – amazon.com/mytv</h2>
     <p class="section-sub">Common questions about Amazon MyTV activation.</p>
     <div class="faq-list">
-
+ 
       <div class="faq-item">
         <button class="faq-q" aria-expanded="false">
           What is amazon.com/mytv?
@@ -464,7 +482,7 @@
           amazon.com/mytv is Amazon's official activation portal. You visit this page and enter a 6-digit code displayed on your TV to connect it to your Amazon account and start watching Prime Video.
         </div>
       </div>
-
+ 
       <div class="faq-item">
         <button class="faq-q" aria-expanded="false">
           My amazon.com/mytv code is not working – what to do?
@@ -474,7 +492,7 @@
           Activation codes expire after 10–15 minutes. Close and reopen the Prime Video app on your TV to generate a new code, then visit amazon.com/mytv again and enter the fresh code.
         </div>
       </div>
-
+ 
       <div class="faq-item">
         <button class="faq-q" aria-expanded="false">
           Do I need a Prime subscription to use amazon.com/mytv?
@@ -484,7 +502,7 @@
           You need an Amazon account to activate via amazon.com/mytv. An Amazon Prime subscription is required to watch Prime Video content. You can start a free trial if you don't have one.
         </div>
       </div>
-
+ 
       <div class="faq-item">
         <button class="faq-q" aria-expanded="false">
           How many devices can I activate with amazon.com/mytv?
@@ -494,7 +512,7 @@
           Amazon allows you to register multiple devices on a single account via amazon.com/mytv. You can manage registered devices anytime from your Amazon account settings under "Manage Your Content and Devices."
         </div>
       </div>
-
+ 
       <div class="faq-item">
         <button class="faq-q" aria-expanded="false">
           Is amazon.com/mytv safe to use?
@@ -504,25 +522,25 @@
           Yes, amazon.com/mytv is Amazon's official and legitimate activation URL. Always make sure you are visiting the real Amazon website (amazon.com) to protect your account credentials.
         </div>
       </div>
-
+ 
     </div>
   </div>
 </section>
-
+ 
 <!-- ===== SEO CONTENT BLOCK ===== -->
 <section class="content-section">
   <div class="wrapper">
     <h2>Complete Guide to amazon.com/mytv Activation</h2>
-
+ 
     <p>
       <strong>amazon.com/mytv</strong> is the dedicated device activation page provided by Amazon for linking Smart TVs, streaming sticks, and gaming consoles to your Prime Video account. Whether you own a Fire TV Stick, a Roku device, an LG Smart TV, or a PlayStation console, the activation process always begins the same way — by visiting <a href="https://www.amazon.com/mytv" target="_blank" rel="noopener noreferrer">amazon.com/mytv</a>.
     </p>
-
+ 
     <h3>Why Do You Need to Activate at amazon.com/mytv?</h3>
     <p>
       When you install Amazon Prime Video on a new device, Amazon needs to verify your identity securely. Instead of entering your full password on a TV remote (which is slow and error-prone), Amazon generates a short 6-digit code on your TV and asks you to enter it on a phone or computer at amazon.com/mytv. This makes activation fast, secure, and simple.
     </p>
-
+ 
     <h3>Common Issues with amazon.com/mytv and How to Fix Them</h3>
     <p>
       The most common problem users face is an expired code. Since codes generated for amazon.com/mytv are valid only for a short window (usually 10–15 minutes), make sure you enter the code promptly. If the code has expired, simply restart the Prime Video app to get a new one.
@@ -530,14 +548,14 @@
     <p>
       Another issue can be signing in to the wrong Amazon account. If you have multiple accounts, ensure you are logged into the correct one at amazon.com/mytv before entering your code.
     </p>
-
+ 
     <h3>Using amazon.com/mytv Outside the US</h3>
     <p>
       The amazon.com/mytv page is globally accessible. Depending on your country, you may be redirected to your local Amazon store (e.g., amazon.co.uk/mytv for the UK, amazon.in/mytv for India). The activation steps remain the same across all regions.
     </p>
   </div>
 </section>
-
+ 
 <!-- ===== FOOTER ===== -->
 <footer>
   <div class="wrapper">
@@ -545,7 +563,7 @@
     <p style="margin-top:8px;">© 2026 Your Website Name · <a href="#">Privacy Policy</a> · <a href="#">Contact</a></p>
   </div>
 </footer>
-
+ 
 <!-- ===== FAQ ACCORDION JS ===== -->
 <script>
   document.querySelectorAll('.faq-q').forEach(btn => {
@@ -558,6 +576,6 @@
     });
   });
 </script>
-
+ 
 </body>
 </html>
